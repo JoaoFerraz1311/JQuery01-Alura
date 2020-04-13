@@ -3,16 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Alura Typer</h1>
-    <p class="frase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quae culpa, eveniet enim labore rem doloribus magnam voluptatem officiis beatae, molestiae animi. Voluptatibus quaerat iure voluptates consequatur optio hic ducimus.</p>
-    <ul class="informacoes">
-        <li><span id="tamanhoDaFrase">30</span> palavras</li>
-        <li>10 segundos</li>
-    </ul>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quae culpa, eveniet enim labore rem doloribus magnam voluptatem officiis beatae, molestiae animi. Voluptatibus quaerat iure voluptates consequatur optio hic ducimus.</p>
+
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanhoDaFrase">30</span> palavras
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="contadorTempo">3</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="campoDigitacao" cols="30" rows="10"></textarea>
+       
+       <div class="botoes">
+        <a id="botaoReniciar" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">restore</i></a> 
+       </div>
+        <button >Reniciar</button>
+
+
+        <ul class="center">
+            <li><span id="contadorCaracteres">0</span> caracteres</li>
+            <li><span id="contadorPalavras">0</span> palavras</li>
+        </ul>
+    </div>
+
+    <section class="placar">
+        <h3 class="center">Placar</h3>
+        <table class="centered bordered">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Numero de palavras</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
 </body>
 </html>
